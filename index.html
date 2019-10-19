@@ -37,24 +37,37 @@
 
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img style="width:100%" src = "images/materialsExperimentationParasiteSmall.jpg" alt = "image of burnt nylon fabric covered in wax">
+    <img id = "materialsExperimentation"style="width:90%" src = "images/materialsExperimentationParasiteSmall.jpg" alt = "image of burnt nylon fabric covered in wax">
     <h1 class="captionText">  Explore my Designs </h1>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img style="width:100%" src = "images/setOfLungsSmall.jpg" alt = "image of J750 3D prints">
+    <img id ="designPhysio" style="width:90%" src = "images/setOfLungsSmall.jpg" alt = "image of J750 3D prints">
     <h1 class="captionText"> Explore my Designs </h1>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img style="width:100%" src = "images/3dPrintedLightSmall.jpg" alt = "image of clear 3d print with blue light shining through it">
+    <img id="light" style="width:90%" src = "images/3dPrintedLightSmall.jpg" alt = "image of clear 3d print with blue light shining through it">
     <h1 class="captionText"> Explore my Designs </h1>
   </div>
 
 </div>
 
+<script>
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
 
     <div id="backgroundColours">
 <h2 class="aboutMeTitle"> About Me </h2>

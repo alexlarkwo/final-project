@@ -177,6 +177,17 @@ flex: 25%; */
 }
 
 /* Home Page slideshow */
+#materialsExperimentation{
+display: block;
+}
+
+#designPhysio{
+display:block;
+}
+
+#light{
+display: block;
+}
 .slideshowContainer{
   max-width: 1000px;
   position: relative;
@@ -335,12 +346,12 @@ input[type=submit]:hover {
 
  /* Project Page */
 .placeholderProject{
-  /* display: inline-block; */
+
   width: 450px;
   height:400px;
   float: left;
-  margin-left: 50px;
-  /* display: flex; */
+  margin-left: 180px;
+  display: flex;
   align-items: center;
   border-color: #B5D2FF;
   border-style: solid;
@@ -349,13 +360,11 @@ input[type=submit]:hover {
 }
 
 .project{
-  /* display: inline-block; */
   width: 450px;
   height:400px;
   float: left;
-  margin-top: 600px;
-  margin-left: 250px;
-  /* display: flex; */
+  margin-left: 70px;
+  display: flex;
   align-items: center;
   border-color: #B5D2FF;
   border-style: solid;
@@ -364,10 +373,13 @@ input[type=submit]:hover {
 }
 
 .projectText{
-padding: 10px;
-margin-top: 10px;
+display: inline-block;
+margin-right: 50px;
+margin-left: 50px;
+float: right;
 justify-content: space-between;
-text-align: left;
+text-align: center;
+align-content: space-around;
 }
 
 /* flexbox */
